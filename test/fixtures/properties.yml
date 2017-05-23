@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  street_one: MyString
+  street_two: MyString
+  city: MyString
+  state_province: MyString
+  country: MyString
+  phone_number: MyString
+  sales_email: MyString
+  reservation_email: MyString
+  description: MyText
+  amenities: MyText
+  attractions: MyText
+  latitude: 1.5
+  longitude: 1.5
+  meeting_space: MyText
+
+two:
+  name: MyString
+  street_one: MyString
+  street_two: MyString
+  city: MyString
+  state_province: MyString
+  country: MyString
+  phone_number: MyString
+  sales_email: MyString
+  reservation_email: MyString
+  description: MyText
+  amenities: MyText
+  attractions: MyText
+  latitude: 1.5
+  longitude: 1.5
+  meeting_space: MyText
