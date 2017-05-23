@@ -1,1 +1,75 @@
-Create
+<h1>Create New Property</h1>
+
+<%= render partial: "/shared/errors", locals: { model: @property } %>
+
+<%= form_for @property do |f| %>
+  <div>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label :street_one %>
+    <%= f.text_field :street_one %>
+  </div>
+  <div>
+    <%= f.label :street_two %>
+    <%= f.text_field :street_two %>
+  </div>
+  <div>
+    <%= f.label :city %>
+    <%= f.text_field :city %>
+  </div>
+  <div>
+    <%= f.label :state_province %>
+    <%= f.text_field :state_province %>
+  </div>
+  <div>
+    <%= f.label :country %>
+    <%= f.text_field :country %>
+  </div>
+  <div>
+    <%= f.label :latitude %>
+    <%= f.text_field :latitude %>
+  </div>
+  <div>
+    <%= f.label :longitude %>
+    <%= f.text_field :longitude %>
+  </div>
+  <div>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+  </div>
+  <div>
+    <%= f.label :sales_email %>
+    <%= f.text_field :sales_email %>
+  </div>
+  <div>
+    <%= f.label :reservation_email %>
+    <%= f.text_field :reservation_email %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+  <div>
+    <%= f.label :amenities %>
+    <%= f.text_area :amenities %>
+  </div>
+  <div>
+    <%= f.label :attractions %>
+    <%= f.text_area :attractions %>
+  </div>
+  <div>
+    <%= f.label :meeting_space %>
+    <%= f.text_area :meeting_space %>
+  </div>
+
+  <div>
+    <%= f.label :picture %>
+    <%= f.file_field :picture %>
+  </div>
+
+  <%= f.submit "Save" %>
+<% end %>
+
+<%= link_to "Back", properties_path %>

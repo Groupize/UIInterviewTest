@@ -31,3 +31,4 @@
 
 en:
   hello: "Hello world"
+  error_heading: "There was a problem saving the record"

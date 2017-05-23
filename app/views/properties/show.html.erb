@@ -1,1 +1,24 @@
-Detail
+<h1><%= @property.name %></h1>
+<p><%= @property.description %></p>
+
+<% if @property.picture.present? %>
+  <img src='/uploads/<%= @property.picture %>' />
+<% end %>
+
+<h2>Location</h2>
+<p><%= raw property_location(@property) %></p>
+<p><strong>Latitude</strong> <%= @property.latitude %></p>
+<p><strong>Longitude</strong> <%= @property.longitude %></p>
+
+<h2>Contact</h2>
+<p><strong>Phone</strong> <%= @property.phone_number %></p>
+<p><strong>Sales Email</strong> <%= @property.sales_email %></p>
+<p><strong>Reservation Email Email</strong> <%= @property.reservation_email %></p>
+
+<h2>Amenities</h2>
+<p><%= simple_format(@property.amenities) %></p>
+
+<h2>Attractions</h2>
+<p><%= simple_format(@property.attractions) %></p>
+
+<%= link_to "Back", properties_path %>

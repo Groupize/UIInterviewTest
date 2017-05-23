@@ -1,1 +1,19 @@
-Listing
+<h1>Properties</h1>
+<table>
+  <thead>
+    <td>Name</td>
+    <td>Location</td>
+    <td>Actions</td>
+  </thead>
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><%= property.name %></td>
+        <td><%= raw property_location(property) %></td>
+        <td><%= link_to "Details", property_path(property) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "Create New Property", new_property_path %>

@@ -1,0 +1,19 @@
+<% style ||= 'display: block;' %>
+
+<% unless model.errors.empty? %>
+  <div class="ui error message" style="<%= style %>">
+    <i class="close icon"></i>
+    <strong>
+      <% if defined? heading %>
+          <%= t(heading) %>
+      <% else %>
+        <%= t("error_heading") %>
+      <% end %>
+    </strong><br>
+    <ul id="errors">
+      <% model.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

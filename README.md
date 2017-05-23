@@ -16,6 +16,20 @@ Second - Please commit your changes to the fork. We'd like to be able to follow 
 
 Third - Ask questions. We're available as a resource if you get stuck. 
 
+### Getting Started
+
+1. Ensure you have ruby 2.4.0 installed on your machine. 
+   If you use RVM or rbenv the project has ruby version and gemset files to assist
+
+2. Fork this repository into your own Github account
+3. Clone the repository locally
+4. Run `bundle install`
+5. Run `rake db:migrate`
+6. Run `rake db:seed`
+7. Run `rails s` to start the server
+8. Go to http://localhost:3000 in your browser
+9. Get to work. See how much you can do to make the site look better.
+
 ### Your Objectives
 
 Your objectives are as follows. 
