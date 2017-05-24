@@ -32,6 +32,8 @@ Third - Ask questions. We're available as a resource if you get stuck.
 
 ### Getting Started (Cloud9)
 
+Video Guide Here: [https://www.youtube.com/watch?v=NEcbNVdq08g&feature=youtu.be](https://www.youtube.com/watch?v=NEcbNVdq08g&feature=youtu.be)
+
 1. Fork this repository into your own Github account
 2. Create a Cloud9 account @ https://c9.io (It's Free) and connect it to your Github account.
 3. Create a new workspace and copy the repository URL from Github.
