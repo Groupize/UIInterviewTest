@@ -16,7 +16,7 @@ Second - Please commit your changes to the fork. We'd like to be able to follow 
 
 Third - Ask questions. We're available as a resource if you get stuck. 
 
-### Getting Started
+### Getting Started (Local Machine)
 
 1. Ensure you have ruby 2.4.0 installed on your machine. 
    If you use RVM or rbenv the project has ruby version and gemset files to assist
@@ -29,6 +29,22 @@ Third - Ask questions. We're available as a resource if you get stuck.
 7. Run `rails s` to start the server
 8. Go to http://localhost:3000 in your browser
 9. Get to work. See how much you can do to make the site look better.
+
+### Getting Started (Cloud9)
+
+1. Fork this repository into your own Github account
+2. Create a Cloud9 account @ https://c9.io (It's Free) and connect it to your Github account.
+3. Create a new workspace and copy the repository URL from Github.
+4. Ensure you have ruby 2.4.0 installed on your workspace.
+5. Run `gem install rails`
+6. Run `bundle install`
+7. Run `rake db:migrate`
+8. Run `rake db:seed`
+9. Run `rails s -b $IP -p $PORT` to start the server
+10. From the top menu click preview then from the dropdowm select `Preview Running Application` 
+11. Get to work. See how much you can do to make the site look better.
+
+
 
 ### Your Objectives
 
